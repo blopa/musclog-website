@@ -21,8 +21,8 @@ export default function RootLayout({
       <html lang="en">
       <body className={inter.className}>
       <div className="flex flex-col min-h-dvh bg-background">
-        <header className="sticky top-0 z-50 bg-background/80 backdrop-blur">
-          <div className="container flex items-center justify-between h-14 px-4 md:px-6">
+        <header className="sticky top-0 z-50 bg-background/80 backdrop-blur w-full">
+          <div className="container mx-auto flex items-center justify-between h-14 px-4 md:px-6">
             <Link href="#" className="flex items-center gap-2" prefetch={false}>
               <DumbbellIcon className="w-6 h-6" />
               <span className="font-bold text-lg">Musclog</span>
@@ -50,11 +50,11 @@ export default function RootLayout({
             </Button>
           </div>
         </header>
-        <main className="flex-1">
+        <main className="flex-1 w-full">
           {children}
         </main>
-        <footer className="bg-muted p-6 md:p-12">
-          <div className="container max-w-7xl grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-sm">
+        <footer className="bg-muted w-full p-6 md:p-12">
+          <div className="container mx-auto max-w-7xl grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-sm">
             <div className="grid gap-1">
               <h3 className="font-semibold">Company</h3>
               <Link href="#" prefetch={false}>
