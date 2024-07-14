@@ -5,6 +5,7 @@ module.exports = {
         'plugin:import/recommended',
         'plugin:regexp/recommended',
         'plugin:@typescript-eslint/recommended',
+        'plugin:@next/next/recommended',
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
