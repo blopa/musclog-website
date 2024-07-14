@@ -136,7 +136,7 @@ function PrivacyPolicy() {
                 <h2 className="text-2xl font-bold mt-8 mb-4">{t('changes_privacy_policy')}</h2>
                 <p className="mb-4">{t('changes_privacy_policy_intro')}</p>
                 <p className="mb-4">{t('changes_privacy_policy_notice')}</p>
-                <p className="mb-4">{t('changes_privacy_policy_review')}</p>
+                <p className="mb-4">{t('changes_privacy_policy_review_text')}</p>
 
                 <h2 className="text-2xl font-bold mt-8 mb-4">{t('play_store_data_safety')}</h2>
                 <p className="mb-4">{t('play_store_data_safety_text')}</p>
