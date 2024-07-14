@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
     description: 'Discover a world of personalized workouts, expert guidance, and a supportive community with Musclog. Achieve your fitness goals with our comprehensive fitness app.',
-    title: 'Musclog - Your Ultimate Fitness Companion',
+    title: 'Musclog - Lift, Log, Repeat',
 };
 
 export default function RootLayout({
