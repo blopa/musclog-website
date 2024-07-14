@@ -15,7 +15,7 @@ function Home() {
         <Main>
             <section className="w-full bg-muted">
                 <div className="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-8 py-12 md:py-24">
-                    <div className="space-y-4 md:max-w-[500px]">
+                    <div className="space-y-4 p-5 md:p-0 md:max-w-[500px]">
                         <h1 className="text-3xl font-bold tracking-tighter md:text-5xl">{t('title')}</h1>
                         <p className="text-muted-foreground md:text-xl">
                             {t('description')}
@@ -60,21 +60,21 @@ function Home() {
                     </div>
                     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                         <div className="flex flex-col items-center gap-4 text-center">
-                            <DumbbellIcon className="w-12 h-12 text-primary" />
+                            <DumbbellIcon className="w-12 h-12 text-primary"/>
                             <h3 className="text-lg font-bold">{t('personalized_workouts')}</h3>
                             <p className="text-muted-foreground">
                                 {t('personalized_workouts_description')}
                             </p>
                         </div>
                         <div className="flex flex-col items-center gap-4 text-center">
-                            <ClipboardIcon className="w-12 h-12 text-primary" />
+                            <ClipboardIcon className="w-12 h-12 text-primary"/>
                             <h3 className="text-lg font-bold">{t('expert_guidance')}</h3>
                             <p className="text-muted-foreground">
                                 {t('expert_guidance_description')}
                             </p>
                         </div>
                         <div className="flex flex-col items-center gap-4 text-center">
-                            <UsersIcon className="w-12 h-12 text-primary" />
+                            <UsersIcon className="w-12 h-12 text-primary"/>
                             <h3 className="text-lg font-bold">{t('supportive_community')}</h3>
                             <p className="text-muted-foreground">
                                 {t('supportive_community_description')}
@@ -161,7 +161,7 @@ function Home() {
                             <CardContent className="p-6 flex flex-col gap-4">
                                 <div className="flex items-center gap-4">
                                     <Avatar className="w-12 h-12">
-                                        <AvatarImage src="/placeholder-user.jpg" />
+                                        <AvatarImage src="/placeholder-user.jpg"/>
                                         <AvatarFallback>U1</AvatarFallback>
                                     </Avatar>
                                     <div>
@@ -178,7 +178,7 @@ function Home() {
                             <CardContent className="p-6 flex flex-col gap-4">
                                 <div className="flex items-center gap-4">
                                     <Avatar className="w-12 h-12">
-                                        <AvatarImage src="/placeholder-user.jpg" />
+                                        <AvatarImage src="/placeholder-user.jpg"/>
                                         <AvatarFallback>U2</AvatarFallback>
                                     </Avatar>
                                     <div>
@@ -195,7 +195,7 @@ function Home() {
                             <CardContent className="p-6 flex flex-col gap-4">
                                 <div className="flex items-center gap-4">
                                     <Avatar className="w-12 h-12">
-                                        <AvatarImage src="/placeholder-user.jpg" />
+                                        <AvatarImage src="/placeholder-user.jpg"/>
                                         <AvatarFallback>U3</AvatarFallback>
                                     </Avatar>
                                     <div>
@@ -225,7 +225,7 @@ function Home() {
                             href="#"
                             prefetch={false}
                         >
-                            <PlayIcon className="w-4 h-4 mr-2" />
+                            <PlayIcon className="w-4 h-4 mr-2"/>
                             {t('download_google_play')}
                         </Link>
                         <Link
@@ -233,7 +233,7 @@ function Home() {
                             href="#"
                             prefetch={false}
                         >
-                            <AppleIcon className="w-4 h-4 mr-2" />
+                            <AppleIcon className="w-4 h-4 mr-2"/>
                             {t('download_app_store')}
                         </Link>
                     </div>

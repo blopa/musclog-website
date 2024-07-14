@@ -50,13 +50,14 @@ function Main({ children, showMenuItems = true }: MainProps) {
                                     {t('nav_download')}
                                 </Link>
                             </nav>
-                            <Button className="md:hidden" size="icon" variant="outline">
-                                <MenuIcon className="w-6 h-6"/>
-                                <span className="sr-only">{t('toggle_navigation')}</span>
-                            </Button>
                         </>
                     )}
-                    <select className="ml-4 p-2 border rounded" onChange={handleLanguageChange} value={language}>
+                    <select
+                        aria-label={t('select_language')}
+                        className="ml-4 p-2 border rounded-md bg-white text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+                        onChange={handleLanguageChange}
+                        value={language}
+                    >
                         <option value="en-US">English</option>
                         <option value="nl-NL">Nederlands</option>
                         <option value="pt-BR">Português</option>
