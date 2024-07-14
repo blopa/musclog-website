@@ -175,5 +175,6 @@
   "data_usage_improvement": "Gegevensgebruik voor Verbetering",
   "data_usage_improvement_text": "Gegevens worden uitsluitend gebruikt voor het leveren of verbeteren van de functionaliteit of functies van uw applicatie. Ze worden niet voor andere doeleinden gebruikt.",
   "user_consent_access": "Toestemming van Gebruiker voor Gegevenstoegang",
-  "user_consent_access_text": "Gegevens kunnen alleen worden geopend na het verkrijgen van de toestemming van de gebruiker. We zorgen ervoor dat alle gevoelige gebruikersgegevens met uw expliciete toestemming worden verzameld en verwerkt."
+  "user_consent_access_text": "Gegevens kunnen alleen worden geopend na het verkrijgen van de toestemming van de gebruiker. We zorgen ervoor dat alle gevoelige gebruikersgegevens met uw expliciete toestemming worden verzameld en verwerkt.",
+  "changes_privacy_policy_review": "U wordt geadviseerd deze Privacyverklaring periodiek te controleren op eventuele wijzigingen. Wijzigingen in deze Privacyverklaring zijn van kracht zodra ze op deze pagina worden geplaatst."
 }

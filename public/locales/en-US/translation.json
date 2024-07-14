@@ -175,5 +175,6 @@
   "data_usage_improvement": "Data Usage for Improvement",
   "data_usage_improvement_text": "Data is used exclusively for providing or improving your application's functionality or features. It is not used for any other purposes.",
   "user_consent_access": "User Consent for Data Access",
-  "user_consent_access_text": "Data can only be accessed after obtaining the user's consent. We ensure that all sensitive user data is collected and processed with your explicit permission."
+  "user_consent_access_text": "Data can only be accessed after obtaining the user's consent. We ensure that all sensitive user data is collected and processed with your explicit permission.",
+  "changes_privacy_policy_review": "You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page."
 }

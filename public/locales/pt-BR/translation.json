@@ -175,5 +175,6 @@
   "data_usage_improvement": "Uso de Dados para Melhoria",
   "data_usage_improvement_text": "Os dados são usados exclusivamente para fornecer ou melhorar a funcionalidade ou os recursos do seu aplicativo. Não são usados para outros fins.",
   "user_consent_access": "Consentimento do Usuário para Acesso aos Dados",
-  "user_consent_access_text": "Os dados só podem ser acessados após obter o consentimento do usuário. Garantimos que todos os dados sensíveis dos usuários sejam coletados e processados com sua permissão explícita."
+  "user_consent_access_text": "Os dados só podem ser acessados após obter o consentimento do usuário. Garantimos que todos os dados sensíveis dos usuários sejam coletados e processados com sua permissão explícita.",
+  "changes_privacy_policy_review": "Você é aconselhado a revisar esta Política de Privacidade periodicamente para quaisquer alterações. As alterações a esta Política de Privacidade são efetivas quando são publicadas nesta página."
 }

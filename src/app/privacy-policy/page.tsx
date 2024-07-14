@@ -138,12 +138,6 @@ function PrivacyPolicy() {
                 <p className="mb-4">{t('changes_privacy_policy_notice')}</p>
                 <p className="mb-4">{t('changes_privacy_policy_review')}</p>
 
-                <h2 className="text-2xl font-bold mt-8 mb-4">{t('contact_us')}</h2>
-                <p className="mb-4">{t('contact_us_intro')}</p>
-                <ul className="list-disc ml-6 mb-4">
-                    <li className="mb-2">{t('contact_us_email')}</li>
-                </ul>
-
                 <h2 className="text-2xl font-bold mt-8 mb-4">{t('play_store_data_safety')}</h2>
                 <p className="mb-4">{t('play_store_data_safety_text')}</p>
 
@@ -152,6 +146,12 @@ function PrivacyPolicy() {
 
                 <h2 className="text-2xl font-bold mt-8 mb-4">{t('user_consent_access')}</h2>
                 <p className="mb-4">{t('user_consent_access_text')}</p>
+
+                <h2 className="text-2xl font-bold mt-8 mb-4">{t('contact_us')}</h2>
+                <p className="mb-4">{t('contact_us_intro')}</p>
+                <ul className="list-disc ml-6 mb-4">
+                    <li className="mb-2">{t('contact_us_email')}</li>
+                </ul>
             </div>
         </Main>
     );
