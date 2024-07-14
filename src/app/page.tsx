@@ -101,7 +101,7 @@ function Home() {
                         <Card className="bg-background shadow-sm">
                             <CardContent className="p-6 flex flex-col gap-4">
                                 <img
-                                    alt="Beginner Workout"
+                                    alt={t('beginner_workout_alt')}
                                     className="rounded-lg object-cover"
                                     height={200}
                                     src={`${PATH}/beginner.png`}
@@ -118,7 +118,7 @@ function Home() {
                         <Card className="bg-background shadow-sm">
                             <CardContent className="p-6 flex flex-col gap-4">
                                 <img
-                                    alt="Intermediate Workout"
+                                    alt={t('intermediate_workout_alt')}
                                     className="rounded-lg object-cover"
                                     height={200}
                                     src={`${PATH}/intermediate.png`}
@@ -135,7 +135,7 @@ function Home() {
                         <Card className="bg-background shadow-sm">
                             <CardContent className="p-6 flex flex-col gap-4">
                                 <img
-                                    alt="Advanced Workout"
+                                    alt={t('advanced_workout_alt')}
                                     className="rounded-lg object-cover"
                                     height={200}
                                     src={`${PATH}/advanced.png`}
@@ -169,7 +169,7 @@ function Home() {
                                         <AvatarFallback>U1</AvatarFallback>
                                     </Avatar>
                                     <div>
-                                        <h4 className="font-bold">Pablo Montenegro</h4>
+                                        <h4 className="font-bold">Pablo</h4>
                                         <p className="text-sm text-muted-foreground">
                                             {t('john_doe_title')}
                                         </p>
@@ -188,7 +188,7 @@ function Home() {
                                         <AvatarFallback>U2</AvatarFallback>
                                     </Avatar>
                                     <div>
-                                        <h4 className="font-bold">Laura F.</h4>
+                                        <h4 className="font-bold">Laura</h4>
                                         <p className="text-sm text-muted-foreground">
                                             {t('jane_smith_title')}
                                         </p>
@@ -224,25 +224,25 @@ function Home() {
             <section className="w-full bg-muted py-12 md:py-24">
                 <div className="container mx-auto grid gap-8 px-4 md:px-6">
                     <div className="space-y-4 text-center">
-                        <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">App Screenshots</h2>
+                        <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">{t('app_screenshots_title')}</h2>
                         <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl">
-                            Take a look at some of the key features of the Fitify app.
+                            {t('app_screenshots_description')}
                         </p>
                     </div>
                     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                         <Card className="bg-background shadow-sm">
                             <CardContent className="p-6 flex flex-col gap-4">
                                 <img
-                                    alt="Fitify App Screenshot 1"
+                                    alt={t('screenshot1_alt')}
                                     className="rounded-lg object-cover"
                                     height={500}
                                     src={`${PATH}/screenshot1.png`}
                                     width={300}
                                 />
                                 <div className="space-y-2">
-                                    <h3 className="text-lg font-bold">Personalized Workouts</h3>
+                                    <h3 className="text-lg font-bold">{t('screenshot1_title')}</h3>
                                     <p className="text-muted-foreground">
-                                        Discover personalized workout plans tailored to your fitness level and goals.
+                                        {t('screenshot1_description')}
                                     </p>
                                 </div>
                             </CardContent>
@@ -250,33 +250,33 @@ function Home() {
                         <Card className="bg-background shadow-sm">
                             <CardContent className="p-6 flex flex-col gap-4">
                                 <img
-                                    alt="Fitify App Screenshot 2"
+                                    alt={t('screenshot2_alt')}
                                     className="rounded-lg object-cover"
                                     height={500}
                                     src={`${PATH}/screenshot2.png`}
                                     width={300}
                                 />
                                 <div className="space-y-2">
-                                    <h3 className="text-lg font-bold">Progress Tracking</h3>
-                                    <p className="text-muted-foreground">Monitor your progress and see your improvements
-                                        over time.</p>
+                                    <h3 className="text-lg font-bold">{t('screenshot2_title')}</h3>
+                                    <p className="text-muted-foreground">
+                                        {t('screenshot2_description')}
+                                    </p>
                                 </div>
                             </CardContent>
                         </Card>
                         <Card className="bg-background shadow-sm">
                             <CardContent className="p-6 flex flex-col gap-4">
                                 <img
-                                    alt="Fitify App Screenshot 3"
+                                    alt={t('screenshot3_alt')}
                                     className="rounded-lg object-cover"
                                     height={500}
                                     src={`${PATH}/screenshot3.png`}
                                     width={300}
                                 />
                                 <div className="space-y-2">
-                                    <h3 className="text-lg font-bold">Community Support</h3>
+                                    <h3 className="text-lg font-bold">{t('screenshot3_title')}</h3>
                                     <p className="text-muted-foreground">
-                                        Connect with a supportive community of fitness enthusiasts and share your
-                                        progress.
+                                        {t('screenshot3_description')}
                                     </p>
                                 </div>
                             </CardContent>

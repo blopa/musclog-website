@@ -176,5 +176,19 @@
   "data_usage_improvement_text": "Los datos recopilados se utilizan estrictamente para proporcionar o mejorar la funcionalidad y las características de su aplicación. Este uso de datos se limita a mejorar la experiencia del usuario y el rendimiento de la aplicación, y bajo ninguna circunstancia se utilizan para otros fines fuera de este ámbito, como marketing o venta a terceros.",
   "user_consent_access": "Consentimiento del Usuario para la Recolección y Acceso a los Datos",
   "user_consent_access_text": "El acceso a cualquier dato del usuario está estrictamente regulado y solo puede ocurrir después de obtener el consentimiento explícito del usuario. Nos dedicamos a garantizar que todos los datos sensibles del usuario se recopilen y procesen con el permiso claro e informado del usuario, adhiriendo a los más altos estándares de privacidad y seguridad.",
-  "changes_privacy_policy_review_text": "Le recomendamos que revise periódicamente esta Política de Privacidad para cualquier actualización o modificación. Cualquier cambio en esta Política de Privacidad entrará en vigor inmediatamente después de ser publicado en esta página. Su uso continuo de la aplicación después de la publicación de cualquier actualización constituye su aceptación de la Política de Privacidad revisada."
+  "changes_privacy_policy_review_text": "Le recomendamos que revise periódicamente esta Política de Privacidad para cualquier actualización o modificación. Cualquier cambio en esta Política de Privacidad entrará en vigor inmediatamente después de ser publicado en esta página. Su uso continuo de la aplicación después de la publicación de cualquier actualización constituye su aceptación de la Política de Privacidad revisada.",
+  "beginner_workout_alt": "Entrenamiento para Principiantes",
+  "intermediate_workout_alt": "Entrenamiento Intermedio",
+  "advanced_workout_alt": "Entrenamiento Avanzado",
+  "app_screenshots_title": "Capturas de Pantalla de la App",
+  "app_screenshots_description": "Echa un vistazo a algunas de las características principales de la app Musclog.",
+  "screenshot1_alt": "Captura de Pantalla de la App Musclog 1",
+  "screenshot1_title": "Entrenamientos Personalizados",
+  "screenshot1_description": "Descubre planes de entrenamiento personalizados adaptados a tu nivel de condición física y objetivos.",
+  "screenshot2_alt": "Captura de Pantalla de la App Musclog 2",
+  "screenshot2_title": "Seguimiento de Progreso",
+  "screenshot2_description": "Monitorea tu progreso y observa tus mejoras a lo largo del tiempo.",
+  "screenshot3_alt": "Captura de Pantalla de la App Musclog 3",
+  "screenshot3_title": "Apoyo de la Comunidad",
+  "screenshot3_description": "Conéctate con una comunidad de entusiastas del fitness y comparte tu progreso."
 }

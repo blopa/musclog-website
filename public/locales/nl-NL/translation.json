@@ -176,5 +176,19 @@
   "data_usage_improvement_text": "De verzamelde gegevens worden uitsluitend gebruikt om de functionaliteit en functies van uw applicatie te bieden of te verbeteren. Dit gegevensgebruik is beperkt tot het verbeteren van de gebruikerservaring en de prestaties van de applicatie, en onder geen enkele omstandigheid worden ze gebruikt voor andere doeleinden buiten dit bereik, zoals marketing of verkoop aan derden.",
   "user_consent_access": "Toestemming van de Gebruiker voor Gegevensverzameling en -toegang",
   "user_consent_access_text": "Toegang tot gebruikersgegevens is strikt gereguleerd en kan alleen plaatsvinden na het verkrijgen van uitdrukkelijke toestemming van de gebruiker. Wij zetten ons in om ervoor te zorgen dat alle gevoelige gebruikersgegevens worden verzameld en verwerkt met de duidelijke en geïnformeerde toestemming van de gebruiker, in overeenstemming met de hoogste normen van privacy en beveiliging.",
-  "changes_privacy_policy_review_text": "Wij raden u aan dit privacybeleid periodiek te bekijken voor updates of wijzigingen. Wijzigingen in dit privacybeleid worden onmiddellijk van kracht na publicatie op deze pagina. Uw voortdurende gebruik van de applicatie na de publicatie van updates houdt uw acceptatie van het herziene privacybeleid in."
+  "changes_privacy_policy_review_text": "Wij raden u aan dit privacybeleid periodiek te bekijken voor updates of wijzigingen. Wijzigingen in dit privacybeleid worden onmiddellijk van kracht na publicatie op deze pagina. Uw voortdurende gebruik van de applicatie na de publicatie van updates houdt uw acceptatie van het herziene privacybeleid in.",
+  "beginner_workout_alt": "Beginners Training",
+  "intermediate_workout_alt": "Gemiddeld Training",
+  "advanced_workout_alt": "Gevorderd Training",
+  "app_screenshots_title": "App Screenshots",
+  "app_screenshots_description": "Bekijk enkele van de belangrijkste functies van de Musclog-app.",
+  "screenshot1_alt": "Musclog App Screenshot 1",
+  "screenshot1_title": "Gepersonaliseerde Workouts",
+  "screenshot1_description": "Ontdek gepersonaliseerde trainingsplannen die zijn afgestemd op jouw fitnessniveau en doelen.",
+  "screenshot2_alt": "Musclog App Screenshot 2",
+  "screenshot2_title": "Voortgang bijhouden",
+  "screenshot2_description": "Volg je voortgang en zie je verbeteringen in de loop van de tijd.",
+  "screenshot3_alt": "Musclog App Screenshot 3",
+  "screenshot3_title": "Community Ondersteuning",
+  "screenshot3_description": "Verbind je met een ondersteunende gemeenschap van fitnessliefhebbers en deel je voortgang."
 }

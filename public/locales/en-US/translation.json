@@ -176,5 +176,19 @@
   "data_usage_improvement_text": "The data collected is strictly utilized to provide or enhance the functionality and features of your application. This data usage is confined to improving user experience and application performance, and under no circumstances is it used for any purposes outside this scope, such as marketing or selling to third parties.",
   "user_consent_access": "User Consent for Data Collection and Access",
   "user_consent_access_text": "Access to any user data is strictly regulated and can only occur after obtaining explicit consent from the user. We are dedicated to ensuring that all sensitive user data is collected and processed with the user's clear and informed permission, adhering to the highest standards of privacy and security.",
-  "changes_privacy_policy_review_text": "We encourage you to periodically review this Privacy Policy for any updates or modifications. Any changes to this Privacy Policy will become effective immediately upon being posted on this page. Your continued use of the application following the posting of any updates constitutes your acceptance of the revised Privacy Policy."
+  "changes_privacy_policy_review_text": "We encourage you to periodically review this Privacy Policy for any updates or modifications. Any changes to this Privacy Policy will become effective immediately upon being posted on this page. Your continued use of the application following the posting of any updates constitutes your acceptance of the revised Privacy Policy.",
+  "beginner_workout_alt": "Beginner Workout",
+  "intermediate_workout_alt": "Intermediate Workout",
+  "advanced_workout_alt": "Advanced Workout",
+  "app_screenshots_title": "App Screenshots",
+  "app_screenshots_description": "Take a look at some of the key features of the Musclog app.",
+  "screenshot1_alt": "Musclog App Screenshot 1",
+  "screenshot1_title": "Personalized Workouts",
+  "screenshot1_description": "Discover personalized workout plans tailored to your fitness level and goals.",
+  "screenshot2_alt": "Musclog App Screenshot 2",
+  "screenshot2_title": "Progress Tracking",
+  "screenshot2_description": "Monitor your progress and see your improvements over time.",
+  "screenshot3_alt": "Musclog App Screenshot 3",
+  "screenshot3_title": "Community Support",
+  "screenshot3_description": "Connect with a supportive community of fitness enthusiasts and share your progress."
 }
