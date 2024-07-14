@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: 'export',
+    basePath: "/musclog-website",
+    reactStrictMode: true,
     // i18n: {
     //     locales: ['en-US', 'pt-BR', 'nl-NL'],
     //     defaultLocale: 'en-US',
