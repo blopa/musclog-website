@@ -1,4 +1,6 @@
-export function MenuIcon(props) {
+import React from 'react';
+
+export function MenuIcon(props: React.SVGProps<SVGSVGElement>) {
     return (
         <svg
             {...props}
@@ -19,7 +21,7 @@ export function MenuIcon(props) {
     )
 }
 
-export function AppleIcon(props) {
+export function AppleIcon(props: React.SVGProps<SVGSVGElement>) {
     return (
         <svg
             {...props}
@@ -39,7 +41,7 @@ export function AppleIcon(props) {
     )
 }
 
-export function ClipboardIcon(props) {
+export function ClipboardIcon(props: React.SVGProps<SVGSVGElement>) {
     return (
         <svg
             {...props}
@@ -59,7 +61,7 @@ export function ClipboardIcon(props) {
     )
 }
 
-export function PlayIcon(props) {
+export function PlayIcon(props: React.SVGProps<SVGSVGElement>) {
     return (
         <svg
             {...props}
@@ -78,7 +80,7 @@ export function PlayIcon(props) {
     )
 }
 
-export function UsersIcon(props) {
+export function UsersIcon(props: React.SVGProps<SVGSVGElement>) {
     return (
         <svg
             {...props}
@@ -100,7 +102,7 @@ export function UsersIcon(props) {
     )
 }
 
-export function DumbbellIcon(props) {
+export function DumbbellIcon(props: React.SVGProps<SVGSVGElement>) {
     return (
         <svg
             {...props}

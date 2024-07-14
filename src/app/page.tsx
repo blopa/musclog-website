@@ -1,18 +1,23 @@
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { Card, CardContent } from '@/components/ui/card'
+'use client';
+import Main from '@/components/main';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Card, CardContent } from '@/components/ui/card';
 import { AppleIcon, ClipboardIcon, DumbbellIcon, PlayIcon, UsersIcon } from '@/components/ui/icons';
-import Link from 'next/link'
+import Link from 'next/link';
+import { appWithTranslation, useTranslation } from 'next-i18next';
 
-export default function Home() {
+function Home() {
+    const { t } = useTranslation();
+
     return (
-        <div>
+        // @ts-ignore
+        <Main>
             <section className="w-full bg-muted">
                 <div className="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-8 py-12 md:py-24">
                     <div className="space-y-4 md:max-w-[500px]">
-                        <h1 className="text-3xl font-bold tracking-tighter md:text-5xl">Get Fit with Musclog</h1>
+                        <h1 className="text-3xl font-bold tracking-tighter md:text-5xl">{t('title')}</h1>
                         <p className="text-muted-foreground md:text-xl">
-                Discover a world of personalized workouts, expert guidance, and a supportive community to help you
-                achieve your fitness goals.
+                            {t('description')}
                         </p>
                         <div className="flex flex-col gap-2 sm:flex-row">
                             <Link
@@ -20,14 +25,14 @@ export default function Home() {
                                 href="#"
                                 prefetch={false}
                             >
-                  Download on Google Play
+                                {t('download_google_play')}
                             </Link>
                             <Link
                                 className="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-6 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                                 href="#"
                                 prefetch={false}
                             >
-                  Download on App Store
+                                {t('download_app_store')}
                             </Link>
                         </div>
                     </div>
@@ -42,52 +47,49 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section className="w-full py-12 md:py-24">
+            <section className="w-full py-12 md:py-24" id="features">
                 <div className="container mx-auto grid gap-8 px-4 md:px-6">
                     <div className="space-y-4 text-center">
-                        <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Discover the Power of Musclog</h2>
+                        <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
+                            {t('discover_power')}
+                        </h2>
                         <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl">
-                Musclog is your ultimate fitness companion, packed with personalized workouts, expert guidance, and a
-                supportive community to help you reach your goals.
+                            {t('power_description')}
                         </p>
                     </div>
                     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                         <div className="flex flex-col items-center gap-4 text-center">
                             <DumbbellIcon className="w-12 h-12 text-primary" />
-                            <h3 className="text-lg font-bold">Personalized Workouts</h3>
+                            <h3 className="text-lg font-bold">{t('personalized_workouts')}</h3>
                             <p className="text-muted-foreground">
-                  Musclog tailors workout plans to your fitness level, goals, and preferences, ensuring you get the most
-                  effective results.
+                                {t('personalized_workouts_description')}
                             </p>
                         </div>
                         <div className="flex flex-col items-center gap-4 text-center">
                             <ClipboardIcon className="w-12 h-12 text-primary" />
-                            <h3 className="text-lg font-bold">Expert Guidance</h3>
+                            <h3 className="text-lg font-bold">{t('expert_guidance')}</h3>
                             <p className="text-muted-foreground">
-                  Benefit from the expertise of our certified trainers, who provide step-by-step instructions and
-                  motivation to keep you on track.
+                                {t('expert_guidance_description')}
                             </p>
                         </div>
                         <div className="flex flex-col items-center gap-4 text-center">
                             <UsersIcon className="w-12 h-12 text-primary" />
-                            <h3 className="text-lg font-bold">Supportive Community</h3>
+                            <h3 className="text-lg font-bold">{t('supportive_community')}</h3>
                             <p className="text-muted-foreground">
-                  Connect with like-minded individuals, share your progress, and find inspiration in our vibrant
-                  community of fitness enthusiasts.
+                                {t('supportive_community_description')}
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
-            <section className="w-full bg-muted py-12 md:py-24">
+            <section className="w-full bg-muted py-12 md:py-24" id="workouts">
                 <div className="container mx-auto grid gap-8 px-4 md:px-6">
                     <div className="space-y-4 text-center">
                         <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
-                Workout Routines for Every Fitness Level
+                            {t('workout_routines')}
                         </h2>
                         <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl">
-                Musclog offers a wide range of workout routines to cater to different fitness levels, from beginner to
-                advanced, ensuring you can find the perfect program to suit your needs.
+                            {t('workout_routines_description')}
                         </p>
                     </div>
                     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -101,10 +103,9 @@ export default function Home() {
                                     width={300}
                                 />
                                 <div className="space-y-2">
-                                    <h3 className="text-lg font-bold">Beginner Workout</h3>
+                                    <h3 className="text-lg font-bold">{t('beginner_workout')}</h3>
                                     <p className="text-muted-foreground">
-                      Start your fitness journey with our carefully designed beginner-friendly workouts, focusing on
-                      building a strong foundation.
+                                        {t('beginner_workout_description')}
                                     </p>
                                 </div>
                             </CardContent>
@@ -119,10 +120,9 @@ export default function Home() {
                                     width={300}
                                 />
                                 <div className="space-y-2">
-                                    <h3 className="text-lg font-bold">Intermediate Workout</h3>
+                                    <h3 className="text-lg font-bold">{t('intermediate_workout')}</h3>
                                     <p className="text-muted-foreground">
-                      Take your fitness to the next level with our intermediate-level workouts, designed to challenge
-                      and push you further.
+                                        {t('intermediate_workout_description')}
                                     </p>
                                 </div>
                             </CardContent>
@@ -137,10 +137,9 @@ export default function Home() {
                                     width={300}
                                 />
                                 <div className="space-y-2">
-                                    <h3 className="text-lg font-bold">Advanced Workout</h3>
+                                    <h3 className="text-lg font-bold">{t('advanced_workout')}</h3>
                                     <p className="text-muted-foreground">
-                      Conquer your fitness goals with our advanced-level workouts, tailored for experienced individuals
-                      seeking maximum results.
+                                        {t('advanced_workout_description')}
                                     </p>
                                 </div>
                             </CardContent>
@@ -148,12 +147,12 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section className="w-full py-12 md:py-24">
+            <section className="w-full py-12 md:py-24" id="testimonials">
                 <div className="container mx-auto grid gap-8 px-4 md:px-6">
                     <div className="space-y-4 text-center">
-                        <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">What Our Users Say</h2>
+                        <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">{t('user_testimonials')}</h2>
                         <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl">
-                Hear from real Musclog users and learn how our app has transformed their fitness journeys.
+                            {t('user_testimonials_description')}
                         </p>
                     </div>
                     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -165,14 +164,12 @@ export default function Home() {
                                         <AvatarFallback>U1</AvatarFallback>
                                     </Avatar>
                                     <div>
-                                        <h4 className="font-bold">John Doe</h4>
-                                        <p className="text-sm text-muted-foreground">Fitness Enthusiast</p>
+                                        <h4 className="font-bold">{t('john_doe')}</h4>
+                                        <p className="text-sm text-muted-foreground">{t('john_doe_title')}</p>
                                     </div>
                                 </div>
                                 <p className="text-muted-foreground">
-                    "Musclog has been a game-changer for me. The personalized
-                    workouts and expert guidance have helped me achieve my
-                    fitness goals in a way that's sustainable and enjoyable."
+                                    {t('john_doe_quote')}
                                 </p>
                             </CardContent>
                         </Card>
@@ -184,15 +181,12 @@ export default function Home() {
                                         <AvatarFallback>U2</AvatarFallback>
                                     </Avatar>
                                     <div>
-                                        <h4 className="font-bold">Jane Smith</h4>
-                                        <p className="text-sm text-muted-foreground">Busy Professional</p>
+                                        <h4 className="font-bold">{t('jane_smith')}</h4>
+                                        <p className="text-sm text-muted-foreground">{t('jane_smith_title')}</p>
                                     </div>
                                 </div>
                                 <p className="text-muted-foreground">
-                    "As a busy professional, Musclog has been a lifesaver. The
-                    app's flexibility and variety of workouts make it easy for
-                    me to stay on track with my fitness routine, even with a
-                    hectic schedule."
+                                    {t('jane_smith_quote')}
                                 </p>
                             </CardContent>
                         </Card>
@@ -204,28 +198,24 @@ export default function Home() {
                                         <AvatarFallback>U3</AvatarFallback>
                                     </Avatar>
                                     <div>
-                                        <h4 className="font-bold">Sarah Lee</h4>
-                                        <p className="text-sm text-muted-foreground">Fitness Beginner</p>
+                                        <h4 className="font-bold">{t('sarah_lee')}</h4>
+                                        <p className="text-sm text-muted-foreground">{t('sarah_lee_title')}</p>
                                     </div>
                                 </div>
                                 <p className="text-muted-foreground">
-                    "As a fitness beginner, Musclog has been an incredible
-                    resource. The app's user-friendly interface
-                    and beginner-friendly workouts have made it easy for me to
-                    build a consistent exercise routine and see real progress."
+                                    {t('sarah_lee_quote')}
                                 </p>
                             </CardContent>
                         </Card>
                     </div>
                 </div>
             </section>
-            <section className="w-full bg-muted py-12 md:py-24">
+            <section className="w-full bg-muted py-12 md:py-24" id="download">
                 <div className="container mx-auto grid gap-8 px-4 md:px-6">
                     <div className="space-y-4 text-center">
-                        <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Download Musclog Today</h2>
+                        <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">{t('download_today')}</h2>
                         <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl">
-                Take the first step towards a healthier, fitter you. Download Musclog now and start your transformative
-                fitness journey.
+                            {t('download_today_description')}
                         </p>
                     </div>
                     <div className="flex flex-col gap-4 sm:flex-row justify-center">
@@ -235,7 +225,7 @@ export default function Home() {
                             prefetch={false}
                         >
                             <PlayIcon className="w-4 h-4 mr-2" />
-                Download on Google Play
+                            {t('download_google_play')}
                         </Link>
                         <Link
                             className="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-6 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
@@ -243,11 +233,13 @@ export default function Home() {
                             prefetch={false}
                         >
                             <AppleIcon className="w-4 h-4 mr-2" />
-                Download on App Store
+                            {t('download_app_store')}
                         </Link>
                     </div>
                 </div>
             </section>
-        </div>
+        </Main>
     )
 }
+
+export default appWithTranslation(Home);
