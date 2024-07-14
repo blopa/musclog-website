@@ -236,7 +236,7 @@ function Home() {
                                     alt="Fitify App Screenshot 1"
                                     className="rounded-lg object-cover"
                                     height={500}
-                                    src={`${PATH}/screenshot.png`}
+                                    src={`${PATH}/screenshot1.png`}
                                     width={300}
                                 />
                                 <div className="space-y-2">
@@ -253,7 +253,7 @@ function Home() {
                                     alt="Fitify App Screenshot 2"
                                     className="rounded-lg object-cover"
                                     height={500}
-                                    src={`${PATH}/screenshot.png`}
+                                    src={`${PATH}/screenshot2.png`}
                                     width={300}
                                 />
                                 <div className="space-y-2">
@@ -269,7 +269,7 @@ function Home() {
                                     alt="Fitify App Screenshot 3"
                                     className="rounded-lg object-cover"
                                     height={500}
-                                    src={`${PATH}/screenshot.png`}
+                                    src={`${PATH}/screenshot3.png`}
                                     width={300}
                                 />
                                 <div className="space-y-2">
