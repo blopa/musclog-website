@@ -43,7 +43,7 @@ function Home() {
                             alt="Musclog App"
                             className="rounded-xl object-cover"
                             height={500}
-                            src="/placeholder.svg"
+                            src="/musclog-website/placeholder.png"
                             width={700}
                         />
                     </div>
@@ -101,7 +101,7 @@ function Home() {
                                     alt="Beginner Workout"
                                     className="rounded-lg object-cover"
                                     height={200}
-                                    src="/placeholder.svg"
+                                    src="/musclog-website/beginner.png"
                                     width={300}
                                 />
                                 <div className="space-y-2">
@@ -118,7 +118,7 @@ function Home() {
                                     alt="Intermediate Workout"
                                     className="rounded-lg object-cover"
                                     height={200}
-                                    src="/placeholder.svg"
+                                    src="/musclog-website/intermediate.png"
                                     width={300}
                                 />
                                 <div className="space-y-2">
@@ -135,7 +135,7 @@ function Home() {
                                     alt="Advanced Workout"
                                     className="rounded-lg object-cover"
                                     height={200}
-                                    src="/placeholder.svg"
+                                    src="/musclog-website/advanced.png"
                                     width={300}
                                 />
                                 <div className="space-y-2">
@@ -162,12 +162,14 @@ function Home() {
                             <CardContent className="p-6 flex flex-col gap-4">
                                 <div className="flex items-center gap-4">
                                     <Avatar className="w-12 h-12">
-                                        <AvatarImage src="/placeholder-user.jpg"/>
+                                        <AvatarImage src="/musclog-website/placeholder-user.jpg"/>
                                         <AvatarFallback>U1</AvatarFallback>
                                     </Avatar>
                                     <div>
-                                        <h4 className="font-bold">{t('john_doe')}</h4>
-                                        <p className="text-sm text-muted-foreground">{t('john_doe_title')}</p>
+                                        <h4 className="font-bold">Pablo Montenegro</h4>
+                                        <p className="text-sm text-muted-foreground">
+                                            {t('john_doe_title')}
+                                        </p>
                                     </div>
                                 </div>
                                 <p className="text-muted-foreground">
@@ -179,12 +181,14 @@ function Home() {
                             <CardContent className="p-6 flex flex-col gap-4">
                                 <div className="flex items-center gap-4">
                                     <Avatar className="w-12 h-12">
-                                        <AvatarImage src="/placeholder-user.jpg"/>
+                                        <AvatarImage src="/musclog-website/placeholder-user.jpg"/>
                                         <AvatarFallback>U2</AvatarFallback>
                                     </Avatar>
                                     <div>
-                                        <h4 className="font-bold">{t('jane_smith')}</h4>
-                                        <p className="text-sm text-muted-foreground">{t('jane_smith_title')}</p>
+                                        <h4 className="font-bold">Laura F.</h4>
+                                        <p className="text-sm text-muted-foreground">
+                                            {t('jane_smith_title')}
+                                        </p>
                                     </div>
                                 </div>
                                 <p className="text-muted-foreground">
@@ -196,12 +200,14 @@ function Home() {
                             <CardContent className="p-6 flex flex-col gap-4">
                                 <div className="flex items-center gap-4">
                                     <Avatar className="w-12 h-12">
-                                        <AvatarImage src="/placeholder-user.jpg"/>
+                                        <AvatarImage src="/musclog-website/placeholder-user.jpg"/>
                                         <AvatarFallback>U3</AvatarFallback>
                                     </Avatar>
                                     <div>
-                                        <h4 className="font-bold">{t('sarah_lee')}</h4>
-                                        <p className="text-sm text-muted-foreground">{t('sarah_lee_title')}</p>
+                                        <h4 className="font-bold">Vitor</h4>
+                                        <p className="text-sm text-muted-foreground">
+                                            {t('sarah_lee_title')}
+                                        </p>
                                     </div>
                                 </div>
                                 <p className="text-muted-foreground">
