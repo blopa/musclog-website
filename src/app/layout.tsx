@@ -1,9 +1,6 @@
 import type { Metadata } from 'next';
 
-import { Button } from '@/components/ui/button';
-import { DumbbellIcon, MenuIcon } from '@/components/ui/icons';
 import { Inter } from 'next/font/google';
-import Link from 'next/link';
 
 import './globals.css';
 
@@ -19,9 +16,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
-  );
+    return (
+        <html lang="en">
+            <body className={inter.className}>{children}</body>
+        </html>
+    );
 }

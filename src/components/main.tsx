@@ -1,5 +1,4 @@
-import { Button } from '@/components/ui/button';
-import { DumbbellIcon, MenuIcon } from '@/components/ui/icons';
+import { DumbbellIcon } from '@/components/ui/icons';
 import Link from 'next/link';
 import { appWithTranslation, useTranslation } from 'next-i18next';
 import { useEffect, useState } from 'react';
