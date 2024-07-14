@@ -3,13 +3,15 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import Backend from 'i18next-http-backend';
 import { initReactI18next } from 'react-i18next';
 
+const PATH = process.env.NEXT_PUBLIC_BASE_PATH ? `/${process.env.NEXT_PUBLIC_BASE_PATH}` : '';
+
 i18n
     .use(Backend)
     .use(LanguageDetector)
     .use(initReactI18next)
     .init({
         backend: {
-            loadPath: '/musclog-website/locales/{{lng}}/{{ns}}.json',
+            loadPath: `${PATH}/locales/{{lng}}/{{ns}}.json`,
         },
         debug: true,
         fallbackLng: 'en-US',

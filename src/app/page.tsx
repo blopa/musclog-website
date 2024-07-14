@@ -7,6 +7,8 @@ import { AppleIcon, ClipboardIcon, DumbbellIcon, PlayIcon, UsersIcon } from '@/c
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
 
+const PATH = process.env.NEXT_PUBLIC_BASE_PATH ? `/${process.env.NEXT_PUBLIC_BASE_PATH}` : '';
+
 function Home() {
     const { t } = useTranslation();
 
@@ -15,7 +17,8 @@ function Home() {
         // @ts-expect-error
         <Main>
             <section className="w-full bg-muted">
-                <div className="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-8 py-12 md:py-24">
+                <div
+                    className="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-8 py-12 md:py-24">
                     <div className="space-y-4 p-5 md:p-0 md:max-w-[500px]">
                         <h1 className="text-3xl font-bold tracking-tighter md:text-5xl">{t('title')}</h1>
                         <p className="text-muted-foreground md:text-xl">
@@ -43,7 +46,7 @@ function Home() {
                             alt="Musclog App"
                             className="rounded-xl object-cover"
                             height={500}
-                            src="/musclog-website/placeholder.png"
+                            src={`${PATH}/placeholder.png`}
                             width={700}
                         />
                     </div>
@@ -101,7 +104,7 @@ function Home() {
                                     alt="Beginner Workout"
                                     className="rounded-lg object-cover"
                                     height={200}
-                                    src="/musclog-website/beginner.png"
+                                    src={`${PATH}/beginner.png`}
                                     width={300}
                                 />
                                 <div className="space-y-2">
@@ -118,7 +121,7 @@ function Home() {
                                     alt="Intermediate Workout"
                                     className="rounded-lg object-cover"
                                     height={200}
-                                    src="/musclog-website/intermediate.png"
+                                    src={`${PATH}/intermediate.png`}
                                     width={300}
                                 />
                                 <div className="space-y-2">
@@ -135,7 +138,7 @@ function Home() {
                                     alt="Advanced Workout"
                                     className="rounded-lg object-cover"
                                     height={200}
-                                    src="/musclog-website/advanced.png"
+                                    src={`${PATH}/advanced.png`}
                                     width={300}
                                 />
                                 <div className="space-y-2">
@@ -162,7 +165,7 @@ function Home() {
                             <CardContent className="p-6 flex flex-col gap-4">
                                 <div className="flex items-center gap-4">
                                     <Avatar className="w-12 h-12">
-                                        <AvatarImage src="/musclog-website/placeholder-user.jpg"/>
+                                        <AvatarImage src={`${PATH}/placeholder-user.jpg`} />
                                         <AvatarFallback>U1</AvatarFallback>
                                     </Avatar>
                                     <div>
@@ -181,7 +184,7 @@ function Home() {
                             <CardContent className="p-6 flex flex-col gap-4">
                                 <div className="flex items-center gap-4">
                                     <Avatar className="w-12 h-12">
-                                        <AvatarImage src="/musclog-website/placeholder-user.jpg"/>
+                                        <AvatarImage src={`${PATH}/placeholder-user.jpg`} />
                                         <AvatarFallback>U2</AvatarFallback>
                                     </Avatar>
                                     <div>
@@ -200,7 +203,7 @@ function Home() {
                             <CardContent className="p-6 flex flex-col gap-4">
                                 <div className="flex items-center gap-4">
                                     <Avatar className="w-12 h-12">
-                                        <AvatarImage src="/musclog-website/placeholder-user.jpg"/>
+                                        <AvatarImage src={`${PATH}/placeholder-user.jpg`} />
                                         <AvatarFallback>U3</AvatarFallback>
                                     </Avatar>
                                     <div>
@@ -213,6 +216,69 @@ function Home() {
                                 <p className="text-muted-foreground">
                                     {t('sarah_lee_quote')}
                                 </p>
+                            </CardContent>
+                        </Card>
+                    </div>
+                </div>
+            </section>
+            <section className="w-full bg-muted py-12 md:py-24">
+                <div className="container grid gap-8 px-4 md:px-6">
+                    <div className="space-y-4 text-center">
+                        <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">App Screenshots</h2>
+                        <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl">
+                            Take a look at some of the key features of the Fitify app.
+                        </p>
+                    </div>
+                    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                        <Card className="bg-background shadow-sm">
+                            <CardContent className="p-6 flex flex-col gap-4">
+                                <img
+                                    alt="Fitify App Screenshot 1"
+                                    className="rounded-lg object-cover"
+                                    height={500}
+                                    src={`${PATH}/screenshot.png`}
+                                    width={300}
+                                />
+                                <div className="space-y-2">
+                                    <h3 className="text-lg font-bold">Personalized Workouts</h3>
+                                    <p className="text-muted-foreground">
+                                        Discover personalized workout plans tailored to your fitness level and goals.
+                                    </p>
+                                </div>
+                            </CardContent>
+                        </Card>
+                        <Card className="bg-background shadow-sm">
+                            <CardContent className="p-6 flex flex-col gap-4">
+                                <img
+                                    alt="Fitify App Screenshot 2"
+                                    className="rounded-lg object-cover"
+                                    height={500}
+                                    src={`${PATH}/screenshot.png`}
+                                    width={300}
+                                />
+                                <div className="space-y-2">
+                                    <h3 className="text-lg font-bold">Progress Tracking</h3>
+                                    <p className="text-muted-foreground">Monitor your progress and see your improvements
+                                        over time.</p>
+                                </div>
+                            </CardContent>
+                        </Card>
+                        <Card className="bg-background shadow-sm">
+                            <CardContent className="p-6 flex flex-col gap-4">
+                                <img
+                                    alt="Fitify App Screenshot 3"
+                                    className="rounded-lg object-cover"
+                                    height={500}
+                                    src={`${PATH}/screenshot.png`}
+                                    width={300}
+                                />
+                                <div className="space-y-2">
+                                    <h3 className="text-lg font-bold">Community Support</h3>
+                                    <p className="text-muted-foreground">
+                                        Connect with a supportive community of fitness enthusiasts and share your
+                                        progress.
+                                    </p>
+                                </div>
                             </CardContent>
                         </Card>
                     </div>
@@ -255,7 +321,7 @@ export default function Page() {
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-expect-error
         <TranslationProvider>
-            <Home />
+            <Home/>
         </TranslationProvider>
     );
 };
