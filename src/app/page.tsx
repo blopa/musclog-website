@@ -222,7 +222,7 @@ function Home() {
                 </div>
             </section>
             <section className="w-full bg-muted py-12 md:py-24">
-                <div className="container grid gap-8 px-4 md:px-6">
+                <div className="container mx-auto grid gap-8 px-4 md:px-6">
                     <div className="space-y-4 text-center">
                         <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">App Screenshots</h2>
                         <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl">
