@@ -1,6 +1,7 @@
 'use client';
+import TranslationProvider from '@/components/TranslationProvider';
 import Main from '@/components/main';
-import { appWithTranslation, useTranslation } from 'next-i18next';
+import { useTranslation } from 'next-i18next';
 
 function PrivacyPolicy() {
     const { t } = useTranslation();
@@ -147,4 +148,12 @@ function PrivacyPolicy() {
     );
 }
 
-export default appWithTranslation(PrivacyPolicy);
+export default function Page() {
+    return (
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-expect-error
+        <TranslationProvider>
+            <PrivacyPolicy />
+        </TranslationProvider>
+    );
+};

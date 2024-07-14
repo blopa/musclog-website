@@ -1,10 +1,11 @@
 'use client';
+import TranslationProvider from '@/components/TranslationProvider';
 import Main from '@/components/main';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Card, CardContent } from '@/components/ui/card';
 import { AppleIcon, ClipboardIcon, DumbbellIcon, PlayIcon, UsersIcon } from '@/components/ui/icons';
 import Link from 'next/link';
-import { appWithTranslation, useTranslation } from 'next-i18next';
+import { useTranslation } from 'next-i18next';
 
 function Home() {
     const { t } = useTranslation();
@@ -243,4 +244,12 @@ function Home() {
     )
 }
 
-export default appWithTranslation(Home);
+export default function Page() {
+    return (
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-expect-error
+        <TranslationProvider>
+            <Home />
+        </TranslationProvider>
+    );
+};
