@@ -8,11 +8,14 @@ i18n
     .use(LanguageDetector)
     .use(initReactI18next)
     .init({
+        backend: {
+            loadPath: '/musclog-website/locales/{{lng}}/{{ns}}.json',
+        },
         debug: true,
         fallbackLng: 'en-US',
         interpolation: {
             escapeValue: false,
-        }
+        },
     });
 
 
