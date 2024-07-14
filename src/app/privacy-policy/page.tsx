@@ -6,7 +6,8 @@ function PrivacyPolicy() {
     const { t } = useTranslation();
 
     return (
-        // @ts-ignore
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-expect-error
         <Main showMenuItems={false}>
             <div className="container mx-auto px-4 py-8 md:py-16">
                 <h1 className="text-4xl font-bold mb-4">{t('privacy_policy')}</h1>

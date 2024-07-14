@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button';
 import { DumbbellIcon, MenuIcon } from '@/components/ui/icons';
 import Link from 'next/link';
 import { appWithTranslation, useTranslation } from 'next-i18next';
+import { useEffect, useState } from 'react';
 
 import '../i18n';
 
@@ -11,7 +12,16 @@ type MainProps = {
 };
 
 function Main({ children, showMenuItems = true }: MainProps) {
-    const { t } = useTranslation();
+    const { i18n, t } = useTranslation();
+    const [language, setLanguage] = useState(i18n.language);
+
+    useEffect(() => {
+        i18n.changeLanguage(language);
+    }, [language, i18n]);
+
+    const handleLanguageChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+        setLanguage(event.target.value);
+    };
 
     return (
         <div className="flex flex-col min-h-dvh bg-background">
@@ -46,6 +56,12 @@ function Main({ children, showMenuItems = true }: MainProps) {
                             </Button>
                         </>
                     )}
+                    <select className="ml-4 p-2 border rounded" onChange={handleLanguageChange} value={language}>
+                        <option value="en-US">English</option>
+                        <option value="nl-NL">Nederlands</option>
+                        <option value="pt-BR">Português</option>
+                        <option value="es-ES">Español</option>
+                    </select>
                 </div>
             </header>
             <main className="flex-1 w-full">
@@ -55,5 +71,6 @@ function Main({ children, showMenuItems = true }: MainProps) {
     );
 }
 
-// @ts-ignore
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 export default appWithTranslation(Main);

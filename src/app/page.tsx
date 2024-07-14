@@ -10,7 +10,8 @@ function Home() {
     const { t } = useTranslation();
 
     return (
-        // @ts-ignore
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-expect-error
         <Main>
             <section className="w-full bg-muted">
                 <div className="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-8 py-12 md:py-24">
