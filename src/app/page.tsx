@@ -246,6 +246,36 @@ function Home() {
                     </div>
                 </div>
             </section>
+            <section className="w-full bg-muted py-12 md:py-24" id="privacy-policy">
+                <div className="container mx-auto grid gap-8 px-4 md:px-6">
+                    <div className="space-y-4 text-center">
+                        <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">{t('privacy_policy')}</h2>
+                        <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl">
+                            {t('privacy_policy_description')}
+                        </p>
+                    </div>
+                    <div className="grid gap-6">
+                        <div className="flex flex-col items-center gap-4 text-center">
+                            <h3 className="text-lg font-bold">{t('consistency_with_play_store_labels')}</h3>
+                            <p className="text-muted-foreground">
+                                {t('consistency_with_play_store_labels_description')}
+                            </p>
+                        </div>
+                        <div className="flex flex-col items-center gap-4 text-center">
+                            <h3 className="text-lg font-bold">{t('data_usage_exclusivity')}</h3>
+                            <p className="text-muted-foreground">
+                                {t('data_usage_exclusivity_description')}
+                            </p>
+                        </div>
+                        <div className="flex flex-col items-center gap-4 text-center">
+                            <h3 className="text-lg font-bold">{t('user_consent_for_data_access')}</h3>
+                            <p className="text-muted-foreground">
+                                {t('user_consent_for_data_access_description')}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </Main>
     )
 }
