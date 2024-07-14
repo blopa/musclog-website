@@ -143,6 +143,15 @@ function PrivacyPolicy() {
                 <ul className="list-disc ml-6 mb-4">
                     <li className="mb-2">{t('contact_us_email')}</li>
                 </ul>
+
+                <h2 className="text-2xl font-bold mt-8 mb-4">{t('play_store_data_safety')}</h2>
+                <p className="mb-4">{t('play_store_data_safety_text')}</p>
+
+                <h2 className="text-2xl font-bold mt-8 mb-4">{t('data_usage_improvement')}</h2>
+                <p className="mb-4">{t('data_usage_improvement_text')}</p>
+
+                <h2 className="text-2xl font-bold mt-8 mb-4">{t('user_consent_access')}</h2>
+                <p className="mb-4">{t('user_consent_access_text')}</p>
             </div>
         </Main>
     );

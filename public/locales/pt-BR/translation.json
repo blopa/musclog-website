@@ -170,11 +170,10 @@
   "contact_us_email": "Por email: webmaster@werules.com",
   "usage_data_text": "Dados de uso são coletados automaticamente ao usar o Serviço. Dados de uso podem incluir informações como o endereço de Protocolo de Internet do Seu Dispositivo (por exemplo, endereço IP), tipo de navegador, versão do navegador, as páginas do nosso Serviço que Você visita, a hora e a data da sua visita, o tempo gasto nessas páginas, identificadores de dispositivos exclusivos e outros dados de diagnóstico. Quando Você acessa o Serviço por ou através de um dispositivo móvel, Podemos coletar certas informações automaticamente, incluindo, mas não se limitando a, o tipo de dispositivo móvel que Você usa, Seu ID exclusivo de dispositivo móvel, o endereço IP do Seu dispositivo móvel, Seu sistema operacional móvel, o tipo de navegador de Internet móvel que Você usa, identificadores de dispositivos exclusivos e outros dados de diagnóstico. Também podemos coletar informações que Seu navegador envia sempre que Você visita nosso Serviço ou quando Você acessa o Serviço por ou através de um dispositivo móvel.",
   "children_privacy_consent": "Se precisarmos confiar no consentimento como base legal para processar Suas informações e Seu país exigir consentimento de um dos pais, Podemos exigir o consentimento de Seu pai antes de coletarmos e usarmos essas informações.",
-  "changes_privacy_policy_review": "Recomenda-se que Você revise esta Política de Privacidade periodicamente para quaisquer alterações. Alterações a esta Política de Privacidade são eficazes quando são publicadas nesta página.",
-  "consistency_with_play_store_labels": "Consistência com as Etiquetas de Segurança de Dados da Play Store",
-  "consistency_with_play_store_labels_description": "Garantimos que as etiquetas de segurança de dados da Play Store sejam consistentes com as divulgações feitas nesta Política de Privacidade. Essa consistência garante que você esteja totalmente informado sobre as práticas de dados do nosso Aplicativo.",
-  "data_usage_exclusivity": "Exclusividade de Uso de Dados",
-  "data_usage_exclusivity_description": "A Musclog usará seus dados exclusivamente para o propósito de fornecer e melhorar a funcionalidade ou os recursos do Aplicativo. Os dados não serão usados para qualquer outro propósito, a menos que você forneça consentimento explícito.",
-  "user_consent_for_data_access": "Consentimento do Usuário para Acesso aos Dados",
-  "user_consent_for_data_access_description": "A Musclog acessará seus dados somente após obter seu consentimento explícito. Isso garante que você tenha controle sobre quais dados são acessados e usados pelo Aplicativo."
+  "play_store_data_safety": "Rótulos de Segurança de Dados do Play Store",
+  "play_store_data_safety_text": "Nossos rótulos de segurança de dados do Play Store são consistentes com as divulgações nesta política de privacidade. Garantimos transparência e conformidade com os requisitos do Play Store.",
+  "data_usage_improvement": "Uso de Dados para Melhoria",
+  "data_usage_improvement_text": "Os dados são usados exclusivamente para fornecer ou melhorar a funcionalidade ou os recursos do seu aplicativo. Não são usados para outros fins.",
+  "user_consent_access": "Consentimento do Usuário para Acesso aos Dados",
+  "user_consent_access_text": "Os dados só podem ser acessados após obter o consentimento do usuário. Garantimos que todos os dados sensíveis dos usuários sejam coletados e processados com sua permissão explícita."
 }
