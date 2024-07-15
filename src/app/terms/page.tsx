@@ -12,7 +12,7 @@ function TermsAndConditions() {
         <Main showMenuItems={false}>
             <div className="container mx-auto px-4 py-8 md:py-16">
                 <h1 className="text-4xl font-bold mb-4">{t('terms_and_conditions')}</h1>
-                <p className="text-sm text-gray-600 mb-4">{t('last_updated')} July 14, 2024</p>
+                <p className="text-sm text-gray-600 mb-4">{t('last_updated')}</p>
                 <p className="mb-4">{t('terms_intro')}</p>
 
                 <h2 className="text-2xl font-bold mt-8 mb-4">{t('interpretation_definitions')}</h2>
