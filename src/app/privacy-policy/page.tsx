@@ -124,6 +124,10 @@ function PrivacyPolicy() {
                 <h3 className="text-xl font-bold mt-4 mb-2">{t('security_personal_data')}</h3>
                 <p className="mb-4">{t('security_personal_data_text')}</p>
 
+                <h3 className="text-xl font-bold mt-4 mb-2">{t('data_protection_mechanisms')}</h3>
+                <p className="mb-4">{t('data_protection_mechanisms_text')}</p>
+                <p className="mb-4">{t('additional_data_protection_measures')}</p>
+
                 <h2 className="text-2xl font-bold mt-8 mb-4">{t('children_privacy')}</h2>
                 <p className="mb-4">{t('children_privacy_intro')}</p>
                 <p className="mb-4">{t('children_privacy_parent')}</p>
