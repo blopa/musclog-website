@@ -27,7 +27,7 @@ function Home() {
                         <div className="flex flex-col gap-2 sm:flex-row">
                             <Link
                                 className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                                href="#"
+                                href="https://play.google.com/store/apps/details?id=com.werules.logger"
                                 prefetch={false}
                             >
                                 {t('download_google_play')}
@@ -295,7 +295,7 @@ function Home() {
                     <div className="flex flex-col gap-4 sm:flex-row justify-center">
                         <Link
                             className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                            href="#"
+                            href="https://play.google.com/store/apps/details?id=com.werules.logger"
                             prefetch={false}
                         >
                             <PlayIcon className="w-4 h-4 mr-2"/>

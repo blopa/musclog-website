@@ -1,6 +1,6 @@
 {
   "name": "musclog-website",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "scripts": {
     "typecheck": "tsc --noEmit",
@@ -18,10 +18,10 @@
     "@radix-ui/react-slot": "^1.1.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
-    "i18next": "^23.12.1",
+    "i18next": "^23.12.2",
     "i18next-browser-languagedetector": "^8.0.0",
     "i18next-http-backend": "^2.5.2",
-    "lucide-react": "^0.408.0",
+    "lucide-react": "^0.417.0",
     "next": "14.2.5",
     "next-i18next": "^15.3.0",
     "react": "^18",
@@ -35,15 +35,15 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "@typescript-eslint/eslint-plugin": "^7.16.1",
-    "@typescript-eslint/parser": "^7.16.1",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
     "eslint": "^8.57.0",
     "eslint-config-expo": "^7.1.2",
     "eslint-config-next": "14.2.5",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-perfectionist": "^2.11.0",
-    "eslint-plugin-react": "^7.34.4",
+    "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-native": "^4.1.0",
     "eslint-plugin-regexp": "^2.6.0",
@@ -51,7 +51,7 @@
     "npm-check-updates": "^16.14.20",
     "postcss": "^8",
     "serve": "^14.2.3",
-    "tailwindcss": "^3.4.6",
+    "tailwindcss": "^3.4.7",
     "typescript": "^5"
   }
 }
