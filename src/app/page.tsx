@@ -9,6 +9,31 @@ import { useTranslation } from 'next-i18next';
 
 const PATH = process.env.NEXT_PUBLIC_BASE_PATH ? `/${process.env.NEXT_PUBLIC_BASE_PATH}` : '';
 
+function Footer() {
+    const { t } = useTranslation();
+
+    return (
+        <footer className="w-full bg-muted py-6">
+            <div className="container mx-auto text-center">
+                <div className="flex justify-center gap-4">
+                    <Link
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                        href="/terms"
+                    >
+                        {t('terms_of_service')}
+                    </Link>
+                    <Link
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                        href="/privacy-policy"
+                    >
+                        {t('privacy_policy')}
+                    </Link>
+                </div>
+            </div>
+        </footer>
+    );
+}
+
 function Home() {
     const { t } = useTranslation();
 
@@ -312,8 +337,9 @@ function Home() {
                     </div>
                 </div>
             </section>
+            <Footer />
         </Main>
-    )
+    );
 }
 
 export default function Page() {
@@ -321,7 +347,7 @@ export default function Page() {
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-expect-error
         <TranslationProvider>
-            <Home/>
+            <Home />
         </TranslationProvider>
     );
-};
+}
