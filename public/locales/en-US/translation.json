@@ -237,5 +237,12 @@
   "changes_terms_text": "We reserve the right, at Our sole discretion, to modify or replace these Terms at any time. If a revision is material We will make reasonable efforts to provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at Our sole discretion. By continuing to access or use Our Service after those revisions become effective, You agree to be bound by the revised terms. If You do not agree to the new terms, in whole or in part, please stop using the website and the Service.",
   "data_protection_mechanisms": "Data Protection Mechanisms",
   "data_protection_mechanisms_text": "We employ comprehensive technical and organizational measures to safeguard your personal data from unauthorized or unlawful processing, as well as accidental loss, destruction, or damage. These measures include, but are not limited to, the use of advanced encryption protocols for data in transit and at rest, stringent access controls, and regular security assessments to ensure ongoing protection.",
-  "additional_data_protection_measures": "In addition, we conduct routine audits and monitoring to detect and respond to potential security threats promptly. Our commitment to data protection extends to our partnerships, as we ensure that any third-party service providers adhere to the same rigorous standards of data security. By continuously updating our security practices, we strive to maintain the highest level of data protection for our users."
+  "additional_data_protection_measures": "In addition, we conduct routine audits and monitoring to detect and respond to potential security threats promptly. Our commitment to data protection extends to our partnerships, as we ensure that any third-party service providers adhere to the same rigorous standards of data security. By continuously updating our security practices, we strive to maintain the highest level of data protection for our users.",
+  "google_oauth_data": "Google OAuth Data",
+  "google_oauth_description": "Our application integrates Google OAuth for the following purposes:",
+  "google_oauth_name": "To obtain your name to personalize your user experience.",
+  "google_oauth_ai_access": "To access Google Generative AI capabilities to enhance application features.",
+  "google_oauth_offline": "All data is stored offline on your device and not uploaded to our servers.",
+  "google_oauth_not_shared": "We do not share your data with third parties for marketing or other purposes.",
+  "google_oauth_optional": "Google OAuth is optional and can be disabled in the application settings."
 }

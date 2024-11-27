@@ -14,7 +14,7 @@ function PrivacyPolicy() {
                 <h1 className="text-4xl font-bold mb-4">{t('privacy_policy')}</h1>
                 <p className="text-sm text-gray-600 mb-4">{t('last_updated')}</p>
                 <p className="mb-4">{t('introduction')}</p>
-                <p className="mb-4" dangerouslySetInnerHTML={{ __html: t('introduction_link') }}></p>
+                <p className="mb-4" dangerouslySetInnerHTML={{__html: t('introduction_link')}}></p>
 
                 <h2 className="text-2xl font-bold mt-8 mb-4">{t('interpretation_definitions')}</h2>
                 <h3 className="text-xl font-bold mt-4 mb-2">{t('interpretation')}</h3>
@@ -45,6 +45,16 @@ function PrivacyPolicy() {
                     <li className="mb-2">{t('usage_data')}</li>
                 </ul>
 
+                <h2 className="text-2xl font-bold mt-8 mb-4">{t('google_oauth_data')}</h2>
+                <p className="mb-4">{t('google_oauth_description')}</p>
+                <ul className="list-disc ml-6 mb-4">
+                    <li className="mb-2">{t('google_oauth_name')}</li>
+                    <li className="mb-2">{t('google_oauth_ai_access')}</li>
+                    <li className="mb-2"><b>{t('google_oauth_offline')}</b></li>
+                    <li className="mb-2"><b>{t('google_oauth_not_shared')}</b></li>
+                    <li className="mb-2">{t('google_oauth_optional')}</li>
+                </ul>
+
                 <h4 className="text-lg font-bold mt-4 mb-2">{t('usage_data')}</h4>
                 <p className="mb-4">{t('usage_data_text')}</p>
 
@@ -66,12 +76,15 @@ function PrivacyPolicy() {
                 <h3 className="text-xl font-bold mt-4 mb-2">{t('use_personal_data')}</h3>
                 <p className="mb-4">{t('use_personal_data_intro')}</p>
                 <ul className="list-disc ml-6 mb-4">
-                    <li className="mb-2"><strong>{t('provide_maintain_service')}</strong> {t('provide_maintain_service_text')}</li>
+                    <li className="mb-2">
+                        <strong>{t('provide_maintain_service')}</strong> {t('provide_maintain_service_text')}</li>
                     <li className="mb-2"><strong>{t('analyze_user_data')}</strong> {t('analyze_user_data_text')}</li>
                     <li className="mb-2"><strong>{t('manage_account')}</strong> {t('manage_account_text')}</li>
-                    <li className="mb-2"><strong>{t('performance_contract')}</strong> {t('performance_contract_text')}</li>
+                    <li className="mb-2"><strong>{t('performance_contract')}</strong> {t('performance_contract_text')}
+                    </li>
                     <li className="mb-2"><strong>{t('contact_you')}</strong> {t('contact_you_text')}</li>
-                    <li className="mb-2"><strong>{t('provide_news_offers')}</strong> {t('provide_news_offers_text')}</li>
+                    <li className="mb-2"><strong>{t('provide_news_offers')}</strong> {t('provide_news_offers_text')}
+                    </li>
                     <li className="mb-2"><strong>{t('manage_requests')}</strong> {t('manage_requests_text')}</li>
                     <li className="mb-2"><strong>{t('business_transfers')}</strong> {t('business_transfers_text')}</li>
                     <li className="mb-2"><strong>{t('other_purposes')}</strong> {t('other_purposes_text')}</li>
@@ -166,7 +179,7 @@ export default function Page() {
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-expect-error
         <TranslationProvider>
-            <PrivacyPolicy />
+            <PrivacyPolicy/>
         </TranslationProvider>
     );
 };
